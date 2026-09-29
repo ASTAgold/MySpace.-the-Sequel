@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>posts</title>
+	<subtitle>meeeh</subtitle>
+	<link rel="self" type="application/atom+xml" href="https://oubihi.de/posts/feed.xml"/>
+  <link rel="alternate" type="text/html" href="https://oubihi.de/posts/"/>
+  
+	<updated>2026-09-29T00:00:00+00:00</updated>
+	
+	<id>https://oubihi.de/posts/feed.xml</id>
+	<entry xml:lang="en">
+		<title>Moving my Homelab to Caddy</title>
+		<published>2026-09-29T00:00:00+00:00</published>
+		<updated>2026-09-29T00:00:00+00:00</updated>
+		<link rel="alternate" type="text/html" href="https://oubihi.de/posts/hello-homelab/"/>
+		<id>https://oubihi.de/posts/hello-homelab/</id>
+    
+		<content type="html" xml:base="https://oubihi.de/posts/hello-homelab/">&lt;p&gt;Here is how I wired up wildcard SSL certificates using Cloudflare DNS-01...&lt;/p&gt;
+&lt;blockquote class=&quot;markdown-alert-note&quot;&gt;
+&lt;p&gt;This is a clean themed info box.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote class=&quot;markdown-alert-tip&quot;&gt;
+&lt;p&gt;Great for highlighting quick terminal commands or shortcuts.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote class=&quot;markdown-alert-warning&quot;&gt;
+&lt;p&gt;Useful for pointing out config pitfalls (like CGNAT or port conflicts).&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>The Ultimate Zola &amp; Serene Writing Cheat Sheet</title>
+		<published>2026-09-29T00:00:00+00:00</published>
+		<updated>2026-09-29T00:00:00+00:00</updated>
+		<link rel="alternate" type="text/html" href="https://oubihi.de/posts/ultiamte-guide/"/>
+		<id>https://oubihi.de/posts/ultiamte-guide/</id>
+    
+		<content type="html" xml:base="https://oubihi.de/posts/ultiamte-guide/">&lt;p&gt;This post serves as a complete reference for every formatting feature and media embed available in &lt;strong&gt;Zola&lt;/strong&gt; with the &lt;strong&gt;Serene&lt;/strong&gt; theme.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;1-text-formatting-typography&quot;&gt;1. Text Formatting &amp;amp; Typography&lt;a class=&quot;zola-anchor&quot; href=&quot;#1-text-formatting-typography&quot; aria-label=&quot;Anchor link for: 1-text-formatting-typography&quot; style=&quot;visibility: hidden;&quot;&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Standard Markdown covers &lt;strong&gt;bold text&lt;/strong&gt;, &lt;em&gt;italic text&lt;/em&gt;, &lt;em&gt;&lt;strong&gt;bold and italic&lt;/strong&gt;&lt;/em&gt;, &lt;del&gt;strikethrough&lt;/del&gt;, and &lt;code&gt;inline code&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Because Markdown allows inline HTML, you can also use:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Highlighted text:&lt;/strong&gt; &lt;mark&gt;Important highlighted phrase&lt;/mark&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Keyboard shortcuts:&lt;/strong&gt; Press &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;C&lt;/kbd&gt; to stop the server.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Subscript &amp;amp; Superscript:&lt;/strong&gt; H&lt;sub&gt;2&lt;/sub&gt;O and 2&lt;sup&gt;10&lt;/sup&gt; = 1024.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Footnotes:&lt;/strong&gt; Here is a statement that needs a source.&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#1&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;1&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;1&lt;/sup&gt;
+&lt;p&gt;This is the footnote content—it automatically links to the bottom of the article and back!&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;2-callouts-quotes-collapsible-spoilers&quot;&gt;2. Callouts, Quotes &amp;amp; Collapsible Spoilers&lt;a class=&quot;zola-anchor&quot; href=&quot;#2-callouts-quotes-collapsible-spoilers&quot; aria-label=&quot;Anchor link for: 2-callouts-quotes-collapsible-spoilers&quot; style=&quot;visibility: hidden;&quot;&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Serene supports GitHub-style callout boxes using blockquotes:&lt;/p&gt;
+&lt;blockquote class=&quot;markdown-alert-note&quot;&gt;
+&lt;p&gt;Useful information that readers should know, even when skimming content.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote class=&quot;markdown-alert-tip&quot;&gt;
+&lt;p&gt;Helpful advice for doing things better or more easily.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote class=&quot;markdown-alert-important&quot;&gt;
+&lt;p&gt;Key information users need to know to achieve their goal.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote class=&quot;markdown-alert-warning&quot;&gt;
+&lt;p&gt;Urgent info that needs immediate user attention to avoid problems.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote class=&quot;markdown-alert-caution&quot;&gt;
+&lt;p&gt;Advises about risks or negative outcomes of certain actions.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;standard-blockquote&quot;&gt;Standard Blockquote&lt;a class=&quot;zola-anchor&quot; href=&quot;#standard-blockquote&quot; aria-label=&quot;Anchor link for: standard-blockquote&quot; style=&quot;visibility: hidden;&quot;&gt;&lt;/a&gt;
+&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&quot;Talk is cheap. Show me the code.&quot;
+— &lt;em&gt;Linus Torvalds&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;collapsible-spoiler-details-block&quot;&gt;Collapsible Spoiler / Details Block&lt;a class=&quot;zola-anchor&quot; href=&quot;#collapsible-spoiler-details-block&quot; aria-label=&quot;Anchor link for: collapsible-spoiler-details-block&quot; style=&quot;visibility: hidden;&quot;&gt;&lt;/a&gt;
+&lt;/h3&gt;
+&lt;details&gt;
+&lt;summary&gt;&lt;strong&gt;Click to view full terminal log output&lt;/strong&gt;&lt;/summary&gt;
+&lt;pre class=&quot;giallo z-l-code z-d-code&quot; &gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;[INFO] Starting server on 192.168.100.12:8080&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;[INFO] TLS certificate loaded for *.yourdomain.com&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;[OK] Ready to accept connections.&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/details&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;3-importing-media-photos-video-audio&quot;&gt;3. Importing Media (Photos, Video &amp;amp; Audio)&lt;a class=&quot;zola-anchor&quot; href=&quot;#3-importing-media-photos-video-audio&quot; aria-label=&quot;Anchor link for: 3-importing-media-photos-video-audio&quot; style=&quot;visibility: hidden;&quot;&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 id=&quot;a-photos-standard-with-captions&quot;&gt;A. Photos (Standard &amp;amp; With Captions)&lt;a class=&quot;zola-anchor&quot; href=&quot;#a-photos-standard-with-captions&quot; aria-label=&quot;Anchor link for: a-photos-standard-with-captions&quot; style=&quot;visibility: hidden;&quot;&gt;&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;If &lt;code&gt;setup-photo.jpg&lt;/code&gt; is in the same folder as &lt;code&gt;index.md&lt;/code&gt; (or in &lt;code&gt;static/setup-photo.jpg&lt;/code&gt;):&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1. Standard Markdown Image:&lt;/strong&gt;
+&lt;img src=&quot;https://oubihi.de/posts/ultiamte-guide/setup-photo.jpg&quot; alt=&quot;My Hardware Setup&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2. Image with Caption and Custom Width (HTML &lt;code&gt;&amp;lt;figure&amp;gt;&lt;/code&gt;):&lt;/strong&gt;&lt;/p&gt;
+&lt;figure style=&quot;text-align: center; margin: 2rem 0;&quot;&gt;
+  &lt;img src=&quot;setup-photo.jpg&quot; alt=&quot;Close-up of the PCB&quot; style=&quot;max-width: 85%; border-radius: 8px;&quot; loading=&quot;lazy&quot;&gt;
+  &lt;figcaption style=&quot;font-size: 0.9em; opacity: 0.75; margin-top: 0.5rem;&quot;&gt;
+    Figure 1: Custom buck converter wiring on the chassis (Shot on Fujifilm X-S20).
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;d-audio-files-mp3-wav-ogg&quot;&gt;D. Audio Files (&lt;code&gt;.mp3&lt;/code&gt; / &lt;code&gt;.wav&lt;/code&gt; / &lt;code&gt;.ogg&lt;/code&gt;)&lt;a class=&quot;zola-anchor&quot; href=&quot;#d-audio-files-mp3-wav-ogg&quot; aria-label=&quot;Anchor link for: d-audio-files-mp3-wav-ogg&quot; style=&quot;visibility: hidden;&quot;&gt;&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;Drop an audio file like &lt;code&gt;guitar-riff.mp3&lt;/code&gt; into the post folder and use the native &lt;code&gt;&amp;lt;audio&amp;gt;&lt;/code&gt; player:&lt;/p&gt;
+&lt;figure style=&quot;margin: 1.5rem 0;&quot;&gt;
+  &lt;figcaption style=&quot;margin-bottom: 0.5rem; font-weight: 600;&quot;&gt;Acoustic Guitar Recording — Take 1:&lt;/figcaption&gt;
+  &lt;audio controls preload=&quot;metadata&quot; style=&quot;width: 100%;&quot;&gt;
+    &lt;source src=&quot;guitar-riff.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+    Your browser does not support the audio element.
+  &lt;/audio&gt;
+&lt;/figure&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;4-code-blocks-with-line-numbers-highlighting&quot;&gt;4. Code Blocks (With Line Numbers &amp;amp; Highlighting)&lt;a class=&quot;zola-anchor&quot; href=&quot;#4-code-blocks-with-line-numbers-highlighting&quot; aria-label=&quot;Anchor link for: 4-code-blocks-with-line-numbers-highlighting&quot; style=&quot;visibility: hidden;&quot;&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Zola has built-in parameters you can pass right after the language name:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;linenos&lt;/code&gt;: Adds line numbers.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hl_lines=[2, &quot;5-6&quot;]&lt;/code&gt;: Highlights specific lines or ranges!&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;linenostart=10&lt;/code&gt;: Starts numbering at line 10.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&quot;giallo z-l-code z-d-code&quot; &gt;&lt;code data-lang=&quot;rust&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;giallo-ln&quot;&gt; 1&lt;/span&gt;&lt;span class=&quot;z-l-8 z-d-10&quot;&gt;fn&lt;/span&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt; main&lt;/span&gt;&lt;span&gt;(&lt;/span&gt;&lt;span&gt;)&lt;/span&gt;&lt;span&gt; {&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;giallo-ln&quot;&gt; 2&lt;/span&gt;&lt;span class=&quot;z-l-8 z-d-10&quot;&gt;    let&lt;/span&gt;&lt;span&gt; server_ip&lt;/span&gt;&lt;span class=&quot;z-l-8 z-d-10&quot;&gt; =&lt;/span&gt;&lt;span class=&quot;z-l-2 z-d-6&quot;&gt; &amp;quot;&lt;/span&gt;&lt;span class=&quot;z-l-2 z-d-6&quot;&gt;192.168.100.12&lt;/span&gt;&lt;span class=&quot;z-l-2 z-d-6&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span&gt;;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;giallo-ln&quot;&gt; 3&lt;/span&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt;    println!&lt;/span&gt;&lt;span&gt;(&lt;/span&gt;&lt;span class=&quot;z-l-2 z-d-6&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;z-l-2 z-d-6&quot;&gt;Routing traffic to &lt;/span&gt;&lt;span class=&quot;z-l-2 z-d-6&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;z-l-2 z-d-6&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;z-l-2 z-d-6&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span&gt;,&lt;/span&gt;&lt;span&gt; server_ip&lt;/span&gt;&lt;span&gt;)&lt;/span&gt;&lt;span&gt;;&lt;/span&gt;&lt;span class=&quot;z-l-5 z-d-3&quot;&gt; //&lt;/span&gt;&lt;span class=&quot;z-l-5 z-d-3&quot;&gt; Highlighted line 3&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;giallo-ln&quot;&gt; 4&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;giallo-ln&quot;&gt; 5&lt;/span&gt;&lt;span class=&quot;z-l-8 z-d-10&quot;&gt;    for&lt;/span&gt;&lt;span&gt; port&lt;/span&gt;&lt;span class=&quot;z-l-8 z-d-10&quot;&gt; in&lt;/span&gt;&lt;span&gt; [&lt;/span&gt;&lt;span class=&quot;z-l-1 z-d-4&quot;&gt;8096&lt;/span&gt;&lt;span&gt;,&lt;/span&gt;&lt;span class=&quot;z-l-1 z-d-4&quot;&gt; 4533&lt;/span&gt;&lt;span&gt;,&lt;/span&gt;&lt;span class=&quot;z-l-1 z-d-4&quot;&gt; 2283&lt;/span&gt;&lt;span&gt;]&lt;/span&gt;&lt;span&gt; {&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;giallo-ln&quot;&gt; 6&lt;/span&gt;&lt;span class=&quot;z-l-5 z-d-3&quot;&gt;        //&lt;/span&gt;&lt;span class=&quot;z-l-5 z-d-3&quot;&gt; Lines 6 and 7 are highlighted&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;giallo-ln&quot;&gt; 7&lt;/span&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt;        check_port&lt;/span&gt;&lt;span&gt;(&lt;/span&gt;&lt;span&gt;server_ip&lt;/span&gt;&lt;span&gt;,&lt;/span&gt;&lt;span&gt; port&lt;/span&gt;&lt;span&gt;)&lt;/span&gt;&lt;span&gt;;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;giallo-ln&quot;&gt; 8&lt;/span&gt;&lt;span&gt;    }&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;giallo-ln&quot;&gt; 9&lt;/span&gt;&lt;span&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;5-diagrams-mermaid&quot;&gt;5. Diagrams (Mermaid)&lt;a class=&quot;zola-anchor&quot; href=&quot;#5-diagrams-mermaid&quot; aria-label=&quot;Anchor link for: 5-diagrams-mermaid&quot; style=&quot;visibility: hidden;&quot;&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Because &lt;code&gt;mermaid = true&lt;/code&gt; is set in the frontmatter, any &lt;code&gt;mermaid&lt;/code&gt; code block automatically turns into a theme-aware diagram:&lt;/p&gt;
+&lt;pre class=&quot;giallo z-l-code z-d-code&quot; &gt;&lt;code data-lang=&quot;mermaid&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-8 z-d-10&quot;&gt;graph&lt;/span&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt; LR&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-9 z-d-12&quot;&gt;    A&lt;/span&gt;&lt;span class=&quot;z-l-8 z-d-10&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;z-l-2 z-d-6&quot;&gt;Client Browser&lt;/span&gt;&lt;span class=&quot;z-l-8 z-d-10&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;z-l-8 z-d-10&quot;&gt; --&amp;gt;|&lt;/span&gt;&lt;span class=&quot;z-l-2 z-d-6&quot;&gt;HTTPS :443&lt;/span&gt;&lt;span class=&quot;z-l-8 z-d-10&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;z-l-9 z-d-12&quot;&gt; B&lt;/span&gt;&lt;span class=&quot;z-l-8 z-d-10&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;z-l-2 z-d-6&quot;&gt;Caddy Reverse Proxy&lt;/span&gt;&lt;span class=&quot;z-l-8 z-d-10&quot;&gt;)&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-9 z-d-12&quot;&gt;    B &lt;/span&gt;&lt;span class=&quot;z-l-8 z-d-10&quot;&gt;--&amp;gt;|&lt;/span&gt;&lt;span class=&quot;z-l-2 z-d-6&quot;&gt;File Server&lt;/span&gt;&lt;span class=&quot;z-l-8 z-d-10&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;z-l-9 z-d-12&quot;&gt; C&lt;/span&gt;&lt;span class=&quot;z-l-8 z-d-10&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;z-l-2 z-d-6&quot;&gt;Zola Static Blog&lt;/span&gt;&lt;span class=&quot;z-l-8 z-d-10&quot;&gt;]&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-9 z-d-12&quot;&gt;    B &lt;/span&gt;&lt;span class=&quot;z-l-8 z-d-10&quot;&gt;--&amp;gt;|&lt;/span&gt;&lt;span class=&quot;z-l-2 z-d-6&quot;&gt;192.168.100.12:8096&lt;/span&gt;&lt;span class=&quot;z-l-8 z-d-10&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;z-l-9 z-d-12&quot;&gt; D&lt;/span&gt;&lt;span class=&quot;z-l-8 z-d-10&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;z-l-2 z-d-6&quot;&gt;Jellyfin&lt;/span&gt;&lt;span class=&quot;z-l-8 z-d-10&quot;&gt;]&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-9 z-d-12&quot;&gt;    B &lt;/span&gt;&lt;span class=&quot;z-l-8 z-d-10&quot;&gt;--&amp;gt;|&lt;/span&gt;&lt;span class=&quot;z-l-2 z-d-6&quot;&gt;192.168.100.12:2283&lt;/span&gt;&lt;span class=&quot;z-l-8 z-d-10&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;z-l-9 z-d-12&quot;&gt; E&lt;/span&gt;&lt;span class=&quot;z-l-8 z-d-10&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;z-l-2 z-d-6&quot;&gt;Immich&lt;/span&gt;&lt;span class=&quot;z-l-8 z-d-10&quot;&gt;]&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;6-math-equations-katex&quot;&gt;6. Math Equations (KaTeX)&lt;a class=&quot;zola-anchor&quot; href=&quot;#6-math-equations-katex&quot; aria-label=&quot;Anchor link for: 6-math-equations-katex&quot; style=&quot;visibility: hidden;&quot;&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;With &lt;code&gt;math = true&lt;/code&gt; in the frontmatter, you can write inline math like $E = mc^2$ or $\omega = 2\pi f$, as well as full display equations:&lt;/p&gt;
+&lt;p&gt;$$
+u(t) = K_p e(t) + K_i \int_0^t e(\tau) ,d\tau + K_d \frac{de(t)}{dt}
+$$&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;7-tables-task-lists&quot;&gt;7. Tables &amp;amp; Task Lists&lt;a class=&quot;zola-anchor&quot; href=&quot;#7-tables-task-lists&quot; aria-label=&quot;Anchor link for: 7-tables-task-lists&quot; style=&quot;visibility: hidden;&quot;&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th style=&quot;text-align: left&quot;&gt;Service&lt;/th&gt;&lt;th style=&quot;text-align: center&quot;&gt;Local Port&lt;/th&gt;&lt;th style=&quot;text-align: left&quot;&gt;Subdomain&lt;/th&gt;&lt;th style=&quot;text-align: center&quot;&gt;Status&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;&lt;strong&gt;Caddy&lt;/strong&gt;&lt;/td&gt;&lt;td style=&quot;text-align: center&quot;&gt;&lt;code&gt;443&lt;/code&gt;&lt;/td&gt;&lt;td style=&quot;text-align: left&quot;&gt;&lt;code&gt;*.yourdomain.com&lt;/code&gt;&lt;/td&gt;&lt;td style=&quot;text-align: center&quot;&gt;Active&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;&lt;strong&gt;Jellyfin&lt;/strong&gt;&lt;/td&gt;&lt;td style=&quot;text-align: center&quot;&gt;&lt;code&gt;8096&lt;/code&gt;&lt;/td&gt;&lt;td style=&quot;text-align: left&quot;&gt;&lt;code&gt;jellyfin.yourdomain.com&lt;/code&gt;&lt;/td&gt;&lt;td style=&quot;text-align: center&quot;&gt;Active&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;&lt;strong&gt;Immich&lt;/strong&gt;&lt;/td&gt;&lt;td style=&quot;text-align: center&quot;&gt;&lt;code&gt;2283&lt;/code&gt;&lt;/td&gt;&lt;td style=&quot;text-align: left&quot;&gt;&lt;code&gt;immich.yourdomain.com&lt;/code&gt;&lt;/td&gt;&lt;td style=&quot;text-align: center&quot;&gt;Active&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3 id=&quot;project-checklist&quot;&gt;Project Checklist&lt;a class=&quot;zola-anchor&quot; href=&quot;#project-checklist&quot; aria-label=&quot;Anchor link for: project-checklist&quot; style=&quot;visibility: hidden;&quot;&gt;&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot; checked=&quot;&quot;/&gt;
+Migrate reverse proxy to Caddy&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot; checked=&quot;&quot;/&gt;
+Set up Dynamic DNS with Cloudflare&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot; checked=&quot;&quot;/&gt;
+Configure Zola with the Serene theme&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;/&gt;
+Fix the Photography gallery section&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+	</entry>
+</feed>

@@ -1,0 +1,464 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  
+    
+  <meta name="description" content="A complete reference post testing typography, code blocks, math, diagrams, and embedded media.">
+<link rel="canonical" href="https://oubihi.de/posts/ultiamte-guide/">
+<meta property="og:site_name" content="Myspace. The Sequel">
+<meta property="og:type" content="article">
+<meta property="og:title" content="The Ultimate Zola &amp; Serene Writing Cheat Sheet">
+<meta property="og:description" content="A complete reference post testing typography, code blocks, math, diagrams, and embedded media.">
+<meta property="og:url" content="https://oubihi.de/posts/ultiamte-guide/">
+<meta property="og:locale" content="en">
+
+
+<meta property="article:published_time" content="2026-09-29">
+<meta property="article:modified_time" content="2026-09-29">
+<meta property="article:tag" content="zola">
+<meta property="article:tag" content="markdown">
+<meta property="article:tag" content="media">
+
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="The Ultimate Zola &amp; Serene Writing Cheat Sheet">
+<meta name="twitter:description" content="A complete reference post testing typography, code blocks, math, diagrams, and embedded media.">
+
+
+
+  <title>The Ultimate Zola &amp; Serene Writing Cheat Sheet</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="https://oubihi.de/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://oubihi.de/img/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://oubihi.de/img/apple-touch-icon.png">
+  
+  <style>
+
+  /* light mode colors */
+  body {
+    --primary-color: #5871a2;
+    --primary-pale-color: #5871a233;
+    --primary-decoration-color: #5871a210;
+    --bg-color: #ffffff;
+    --text-color: #2f3030;
+    --text-pale-color: #767676;
+    --text-decoration-color: #a9a9a9;
+    --highlight-mark-color: #5f75b020;
+
+    --callout-note-color: #5871a2;
+    --callout-tip-color: #268556;
+    --callout-important-color: #885fc9;
+    --callout-warning-color: #ab6632;
+    --callout-caution-color: #c64e4e;
+  }
+
+  /* dark mode colors */
+  body.dark {
+    --primary-color: #6f8fd1;
+    --primary-pale-color: #6f8fd166;
+    --primary-decoration-color: #6f8fd112;
+    --bg-color: #1c1c1c;
+    --text-color: #c1c1c1;
+    --text-pale-color: #848484;
+    --text-decoration-color: #5f5f5f;
+    --highlight-mark-color: #8296cb3b;
+
+    --callout-note-color: #6f8fd1;
+    --callout-tip-color: #47976f;
+    --callout-important-color: #9776cd;
+    --callout-warning-color: #ad7a52;
+    --callout-caution-color: #d06161;
+  }
+
+  /* typography */
+  body {
+    --main-font: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --code-font: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+    --homepage-max-width: 768px;
+    --main-max-width: 768px;
+    --avatar-size: 60px;
+    --font-size: 16px;
+    --line-height: 1.75;
+    --img-border-radius: 0px;
+    --detail-border-radius: 0px;
+    --dark-mode-img-brightness: 0.75;
+    --dark-mode-chart-brightness: 0.75;
+    --inline-code-border-radius: 2px;
+    --inline-code-bg-color: var(--primary-decoration-color);
+    --block-code-border-radius: 0px;
+    --block-code-border-color: var(--primary-color);
+    --detail-border-color: var(--primary-color);
+  }
+
+</style>
+
+  <link rel="stylesheet" href="https://oubihi.de/main.css">
+  
+
+<link id="hl" rel="stylesheet" type="text/css" href="/giallo-light.css" />
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.18.6/dist/katex.min.css" integrity="sha384-M59ezskvvpvT+a+C1x088YJ3DVmK+wZdX0UkVKalOI4Qi5Nwv0WrvpqHcfa2HQqB" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.18.6/dist/katex.min.js" integrity="sha384-7jGyG5zFwmEamqNWdCbpsPn+GTWEis3lnV7X/jXHyhFpJG7ExABLyMapabg8F4+p" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.18.6/dist/contrib/auto-render.min.js" integrity="sha384-bjyGPfbij8/NDKJhSGZNP/khQVgtHUE5exjm4Ydllo42FwIgYsdLO2lXGmRBf5Mz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.18.6/dist/contrib/copy-tex.min.js" integrity="sha384-Pe2JWbaShhSRT0SESJ9XLPeAsi4yrNi7r/CiH0Coq7giBjK5a6Ae7XcybE8rNlQP" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        renderMathInElement(document.body, {
+            delimiters: [
+                { left: '$$', right: '$$', display: true },
+                { left: '$', right: '$', display: false },
+                { left: '\\(', right: '\\)', display: false },
+                { left: '\\[', right: '\\]', display: true }
+            ],
+            throwOnError: false
+        });
+    });
+</script>
+
+
+  
+</head>
+
+<body class="post">
+  
+  <script>
+    const theme = sessionStorage.getItem('theme');
+    const match = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    if ((theme && theme == 'dark') || (!theme && match)) {
+      document.body.classList.add('dark');
+      const hl = document.querySelector('link#hl');
+      if (hl) hl.href = 'https://oubihi.de/giallo-dark.css';
+    }
+  </script>
+  
+  
+<div id="wrapper">
+  <div id="blank"></div>
+  <aside>
+    
+    
+    <nav>
+      <ul>
+        
+        <li>
+          <a class="h2" href="#1-text-formatting-typography">1. Text Formatting &amp; Typography</a>
+          
+        </li>
+        
+        <li>
+          <a class="h2" href="#2-callouts-quotes-collapsible-spoilers">2. Callouts, Quotes &amp; Collapsible Spoilers</a>
+          
+          <ul>
+            
+            <li>
+              <a class="h3" href="#standard-blockquote">Standard Blockquote</a>
+            </li>
+            
+            <li>
+              <a class="h3" href="#collapsible-spoiler-details-block">Collapsible Spoiler / Details Block</a>
+            </li>
+            
+          </ul>
+          
+        </li>
+        
+        <li>
+          <a class="h2" href="#3-importing-media-photos-video-audio">3. Importing Media (Photos, Video &amp; Audio)</a>
+          
+          <ul>
+            
+            <li>
+              <a class="h3" href="#a-photos-standard-with-captions">A. Photos (Standard &amp; With Captions)</a>
+            </li>
+            
+            <li>
+              <a class="h3" href="#d-audio-files-mp3-wav-ogg">D. Audio Files (.mp3 / .wav / .ogg)</a>
+            </li>
+            
+          </ul>
+          
+        </li>
+        
+        <li>
+          <a class="h2" href="#4-code-blocks-with-line-numbers-highlighting">4. Code Blocks (With Line Numbers &amp; Highlighting)</a>
+          
+        </li>
+        
+        <li>
+          <a class="h2" href="#5-diagrams-mermaid">5. Diagrams (Mermaid)</a>
+          
+        </li>
+        
+        <li>
+          <a class="h2" href="#6-math-equations-katex">6. Math Equations (KaTeX)</a>
+          
+        </li>
+        
+        <li>
+          <a class="h2" href="#7-tables-task-lists">7. Tables &amp; Task Lists</a>
+          
+          <ul>
+            
+            <li>
+              <a class="h3" href="#project-checklist">Project Checklist</a>
+            </li>
+            
+          </ul>
+          
+        </li>
+        
+      </ul>
+    </nav>
+    
+    
+  </aside>
+  <main>
+    
+<header>
+  <nav>
+    <a id="back-link" href="https://oubihi.de/posts">← Back</a>
+  </nav>
+</header>
+
+
+    <div>
+      
+      
+      
+      
+      <div id="copy-cfg" style="display: none;" data-copy-icon="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;18&quot; height=&quot;18&quot;&gt;&lt;path d=&quot;M6.9998 6V3C6.9998 2.44772 7.44752 2 7.9998 2H19.9998C20.5521 2 20.9998 2.44772 20.9998 3V17C20.9998 17.5523 20.5521 18 19.9998 18H16.9998V20.9991C16.9998 21.5519 16.5499 22 15.993 22H4.00666C3.45059 22 3 21.5554 3 20.9991L3.0026 7.00087C3.0027 6.44811 3.45264 6 4.00942 6H6.9998ZM5.00242 8L5.00019 20H14.9998V8H5.00242ZM8.9998 6H16.9998V16H18.9998V4H8.9998V6Z&quot; fill=&quot;currentColor&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+" data-check-icon="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;18&quot; height=&quot;18&quot;&gt;&lt;path d=&quot;M10.0007 15.1709L19.1931 5.97852L20.6073 7.39273L10.0007 17.9993L3.63672 11.6354L5.05093 10.2212L10.0007 15.1709Z&quot; fill=&quot;currentColor&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+"></div>
+      
+      <article class="prose">
+        <h1>The Ultimate Zola &amp; Serene Writing Cheat Sheet</h1>
+        
+        <div id="post-info">
+          <div id="date">
+            <span id="publish">Sep 29, 2026</span>
+            </div>
+
+          
+          <div id="tags">
+            <a class="instant" href="https://oubihi.de/tags/zola/"><span>#</span>zola</a><a class="instant" href="https://oubihi.de/tags/markdown/"><span>#</span>markdown</a><a class="instant" href="https://oubihi.de/tags/media/"><span>#</span>media</a>
+          </div>
+          
+        </div>
+
+        
+        
+
+        
+
+        <p>This post serves as a complete reference for every formatting feature and media embed available in <strong>Zola</strong> with the <strong>Serene</strong> theme.</p>
+<hr />
+<h2 id="1-text-formatting-typography">1. Text Formatting &amp; Typography<a class="zola-anchor" href="#1-text-formatting-typography" aria-label="Anchor link for: 1-text-formatting-typography" style="visibility: hidden;"></a>
+</h2>
+<p>Standard Markdown covers <strong>bold text</strong>, <em>italic text</em>, <em><strong>bold and italic</strong></em>, <del>strikethrough</del>, and <code>inline code</code>.</p>
+<p>Because Markdown allows inline HTML, you can also use:</p>
+<ul>
+<li><strong>Highlighted text:</strong> <mark>Important highlighted phrase</mark></li>
+<li><strong>Keyboard shortcuts:</strong> Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to stop the server.</li>
+<li><strong>Subscript &amp; Superscript:</strong> H<sub>2</sub>O and 2<sup>10</sup> = 1024.</li>
+<li><strong>Footnotes:</strong> Here is a statement that needs a source.<sup class="footnote-reference"><a href="#1">1</a></sup></li>
+</ul>
+<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+<p>This is the footnote content—it automatically links to the bottom of the article and back!</p>
+</div>
+<hr />
+<h2 id="2-callouts-quotes-collapsible-spoilers">2. Callouts, Quotes &amp; Collapsible Spoilers<a class="zola-anchor" href="#2-callouts-quotes-collapsible-spoilers" aria-label="Anchor link for: 2-callouts-quotes-collapsible-spoilers" style="visibility: hidden;"></a>
+</h2>
+<p>Serene supports GitHub-style callout boxes using blockquotes:</p>
+<blockquote class="markdown-alert-note">
+<p>Useful information that readers should know, even when skimming content.</p>
+</blockquote>
+<blockquote class="markdown-alert-tip">
+<p>Helpful advice for doing things better or more easily.</p>
+</blockquote>
+<blockquote class="markdown-alert-important">
+<p>Key information users need to know to achieve their goal.</p>
+</blockquote>
+<blockquote class="markdown-alert-warning">
+<p>Urgent info that needs immediate user attention to avoid problems.</p>
+</blockquote>
+<blockquote class="markdown-alert-caution">
+<p>Advises about risks or negative outcomes of certain actions.</p>
+</blockquote>
+<h3 id="standard-blockquote">Standard Blockquote<a class="zola-anchor" href="#standard-blockquote" aria-label="Anchor link for: standard-blockquote" style="visibility: hidden;"></a>
+</h3>
+<blockquote>
+<p>"Talk is cheap. Show me the code."
+— <em>Linus Torvalds</em></p>
+</blockquote>
+<h3 id="collapsible-spoiler-details-block">Collapsible Spoiler / Details Block<a class="zola-anchor" href="#collapsible-spoiler-details-block" aria-label="Anchor link for: collapsible-spoiler-details-block" style="visibility: hidden;"></a>
+</h3>
+<details>
+<summary><strong>Click to view full terminal log output</strong></summary>
+<pre class="giallo z-l-code z-d-code" ><code data-lang="plain"><span class="giallo-l"><span>[INFO] Starting server on 192.168.100.12:8080</span></span>
+<span class="giallo-l"><span>[INFO] TLS certificate loaded for *.yourdomain.com</span></span>
+<span class="giallo-l"><span>[OK] Ready to accept connections.</span></span></code></pre></details>
+<hr />
+<h2 id="3-importing-media-photos-video-audio">3. Importing Media (Photos, Video &amp; Audio)<a class="zola-anchor" href="#3-importing-media-photos-video-audio" aria-label="Anchor link for: 3-importing-media-photos-video-audio" style="visibility: hidden;"></a>
+</h2>
+<h3 id="a-photos-standard-with-captions">A. Photos (Standard &amp; With Captions)<a class="zola-anchor" href="#a-photos-standard-with-captions" aria-label="Anchor link for: a-photos-standard-with-captions" style="visibility: hidden;"></a>
+</h3>
+<p>If <code>setup-photo.jpg</code> is in the same folder as <code>index.md</code> (or in <code>static/setup-photo.jpg</code>):</p>
+<p><strong>1. Standard Markdown Image:</strong>
+<img src="https://oubihi.de/posts/ultiamte-guide/setup-photo.jpg" alt="My Hardware Setup" /></p>
+<p><strong>2. Image with Caption and Custom Width (HTML <code>&lt;figure&gt;</code>):</strong></p>
+<figure style="text-align: center; margin: 2rem 0;">
+  <img src="setup-photo.jpg" alt="Close-up of the PCB" style="max-width: 85%; border-radius: 8px;" loading="lazy">
+  <figcaption style="font-size: 0.9em; opacity: 0.75; margin-top: 0.5rem;">
+    Figure 1: Custom buck converter wiring on the chassis (Shot on Fujifilm X-S20).
+  </figcaption>
+</figure>
+<hr />
+<h3 id="d-audio-files-mp3-wav-ogg">D. Audio Files (<code>.mp3</code> / <code>.wav</code> / <code>.ogg</code>)<a class="zola-anchor" href="#d-audio-files-mp3-wav-ogg" aria-label="Anchor link for: d-audio-files-mp3-wav-ogg" style="visibility: hidden;"></a>
+</h3>
+<p>Drop an audio file like <code>guitar-riff.mp3</code> into the post folder and use the native <code>&lt;audio&gt;</code> player:</p>
+<figure style="margin: 1.5rem 0;">
+  <figcaption style="margin-bottom: 0.5rem; font-weight: 600;">Acoustic Guitar Recording — Take 1:</figcaption>
+  <audio controls preload="metadata" style="width: 100%;">
+    <source src="guitar-riff.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</figure>
+<hr />
+<h2 id="4-code-blocks-with-line-numbers-highlighting">4. Code Blocks (With Line Numbers &amp; Highlighting)<a class="zola-anchor" href="#4-code-blocks-with-line-numbers-highlighting" aria-label="Anchor link for: 4-code-blocks-with-line-numbers-highlighting" style="visibility: hidden;"></a>
+</h2>
+<p>Zola has built-in parameters you can pass right after the language name:</p>
+<ul>
+<li><code>linenos</code>: Adds line numbers.</li>
+<li><code>hl_lines=[2, "5-6"]</code>: Highlights specific lines or ranges!</li>
+<li><code>linenostart=10</code>: Starts numbering at line 10.</li>
+</ul>
+<pre class="giallo z-l-code z-d-code" ><code data-lang="rust"><span class="giallo-l"><span aria-hidden="true" class="giallo-ln"> 1</span><span class="z-l-8 z-d-10">fn</span><span class="z-l-6 z-d-7"> main</span><span>(</span><span>)</span><span> {</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln"> 2</span><span class="z-l-8 z-d-10">    let</span><span> server_ip</span><span class="z-l-8 z-d-10"> =</span><span class="z-l-2 z-d-6"> &quot;</span><span class="z-l-2 z-d-6">192.168.100.12</span><span class="z-l-2 z-d-6">&quot;</span><span>;</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln"> 3</span><span class="z-l-6 z-d-7">    println!</span><span>(</span><span class="z-l-2 z-d-6">&quot;</span><span class="z-l-2 z-d-6">Routing traffic to </span><span class="z-l-2 z-d-6">{</span><span class="z-l-2 z-d-6">}</span><span class="z-l-2 z-d-6">&quot;</span><span>,</span><span> server_ip</span><span>)</span><span>;</span><span class="z-l-5 z-d-3"> //</span><span class="z-l-5 z-d-3"> Highlighted line 3</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln"> 4</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln"> 5</span><span class="z-l-8 z-d-10">    for</span><span> port</span><span class="z-l-8 z-d-10"> in</span><span> [</span><span class="z-l-1 z-d-4">8096</span><span>,</span><span class="z-l-1 z-d-4"> 4533</span><span>,</span><span class="z-l-1 z-d-4"> 2283</span><span>]</span><span> {</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln"> 6</span><span class="z-l-5 z-d-3">        //</span><span class="z-l-5 z-d-3"> Lines 6 and 7 are highlighted</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln"> 7</span><span class="z-l-6 z-d-7">        check_port</span><span>(</span><span>server_ip</span><span>,</span><span> port</span><span>)</span><span>;</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln"> 8</span><span>    }</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln"> 9</span><span>}</span></span></code></pre>
+<hr />
+<h2 id="5-diagrams-mermaid">5. Diagrams (Mermaid)<a class="zola-anchor" href="#5-diagrams-mermaid" aria-label="Anchor link for: 5-diagrams-mermaid" style="visibility: hidden;"></a>
+</h2>
+<p>Because <code>mermaid = true</code> is set in the frontmatter, any <code>mermaid</code> code block automatically turns into a theme-aware diagram:</p>
+<pre class="giallo z-l-code z-d-code" ><code data-lang="mermaid"><span class="giallo-l"><span class="z-l-8 z-d-10">graph</span><span class="z-l-6 z-d-7"> LR</span></span>
+<span class="giallo-l"><span class="z-l-9 z-d-12">    A</span><span class="z-l-8 z-d-10">[</span><span class="z-l-2 z-d-6">Client Browser</span><span class="z-l-8 z-d-10">]</span><span class="z-l-8 z-d-10"> --&gt;|</span><span class="z-l-2 z-d-6">HTTPS :443</span><span class="z-l-8 z-d-10">|</span><span class="z-l-9 z-d-12"> B</span><span class="z-l-8 z-d-10">(</span><span class="z-l-2 z-d-6">Caddy Reverse Proxy</span><span class="z-l-8 z-d-10">)</span></span>
+<span class="giallo-l"><span class="z-l-9 z-d-12">    B </span><span class="z-l-8 z-d-10">--&gt;|</span><span class="z-l-2 z-d-6">File Server</span><span class="z-l-8 z-d-10">|</span><span class="z-l-9 z-d-12"> C</span><span class="z-l-8 z-d-10">[</span><span class="z-l-2 z-d-6">Zola Static Blog</span><span class="z-l-8 z-d-10">]</span></span>
+<span class="giallo-l"><span class="z-l-9 z-d-12">    B </span><span class="z-l-8 z-d-10">--&gt;|</span><span class="z-l-2 z-d-6">192.168.100.12:8096</span><span class="z-l-8 z-d-10">|</span><span class="z-l-9 z-d-12"> D</span><span class="z-l-8 z-d-10">[</span><span class="z-l-2 z-d-6">Jellyfin</span><span class="z-l-8 z-d-10">]</span></span>
+<span class="giallo-l"><span class="z-l-9 z-d-12">    B </span><span class="z-l-8 z-d-10">--&gt;|</span><span class="z-l-2 z-d-6">192.168.100.12:2283</span><span class="z-l-8 z-d-10">|</span><span class="z-l-9 z-d-12"> E</span><span class="z-l-8 z-d-10">[</span><span class="z-l-2 z-d-6">Immich</span><span class="z-l-8 z-d-10">]</span></span></code></pre>
+<hr />
+<h2 id="6-math-equations-katex">6. Math Equations (KaTeX)<a class="zola-anchor" href="#6-math-equations-katex" aria-label="Anchor link for: 6-math-equations-katex" style="visibility: hidden;"></a>
+</h2>
+<p>With <code>math = true</code> in the frontmatter, you can write inline math like $E = mc^2$ or $\omega = 2\pi f$, as well as full display equations:</p>
+<p>$$
+u(t) = K_p e(t) + K_i \int_0^t e(\tau) ,d\tau + K_d \frac{de(t)}{dt}
+$$</p>
+<hr />
+<h2 id="7-tables-task-lists">7. Tables &amp; Task Lists<a class="zola-anchor" href="#7-tables-task-lists" aria-label="Anchor link for: 7-tables-task-lists" style="visibility: hidden;"></a>
+</h2>
+<table><thead><tr><th style="text-align: left">Service</th><th style="text-align: center">Local Port</th><th style="text-align: left">Subdomain</th><th style="text-align: center">Status</th></tr></thead><tbody>
+<tr><td style="text-align: left"><strong>Caddy</strong></td><td style="text-align: center"><code>443</code></td><td style="text-align: left"><code>*.yourdomain.com</code></td><td style="text-align: center">Active</td></tr>
+<tr><td style="text-align: left"><strong>Jellyfin</strong></td><td style="text-align: center"><code>8096</code></td><td style="text-align: left"><code>jellyfin.yourdomain.com</code></td><td style="text-align: center">Active</td></tr>
+<tr><td style="text-align: left"><strong>Immich</strong></td><td style="text-align: center"><code>2283</code></td><td style="text-align: left"><code>immich.yourdomain.com</code></td><td style="text-align: center">Active</td></tr>
+</tbody></table>
+<h3 id="project-checklist">Project Checklist<a class="zola-anchor" href="#project-checklist" aria-label="Anchor link for: project-checklist" style="visibility: hidden;"></a>
+</h3>
+<ul>
+<li><input disabled="" type="checkbox" checked=""/>
+Migrate reverse proxy to Caddy</li>
+<li><input disabled="" type="checkbox" checked=""/>
+Set up Dynamic DNS with Cloudflare</li>
+<li><input disabled="" type="checkbox" checked=""/>
+Configure Zola with the Serene theme</li>
+<li><input disabled="" type="checkbox"/>
+Fix the Photography gallery section</li>
+</ul>
+
+      </article>
+
+      
+      
+
+      
+      
+    </div>
+
+    
+
+  
+  
+
+<footer>
+  <div class="left">
+    <div class="copyright">
+      © 2025 ASTAgold
+      
+      <span>|</span>
+      Built with <a href="https://www.getzola.org" rel="noreferrer" target="_blank">zola</a> and <a href="https://github.com/isunjn/serene" rel="noreferrer" target="_blank">serene</a>
+      
+    </div>
+  </div>
+
+  <div class="right">
+    
+    <a id="rss-btn" href="https://oubihi.de/posts/feed.xml">RSS</a>
+    
+
+    
+    
+    
+    <button id="theme-toggle" aria-label="theme switch">
+      <span class="moon-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M10 7C10 10.866 13.134 14 17 14C18.9584 14 20.729 13.1957 21.9995 11.8995C22 11.933 22 11.9665 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C12.0335 2 12.067 2 12.1005 2.00049C10.8043 3.27098 10 5.04157 10 7ZM4 12C4 16.4183 7.58172 20 12 20C15.0583 20 17.7158 18.2839 19.062 15.7621C18.3945 15.9187 17.7035 16 17 16C12.0294 16 8 11.9706 8 7C8 6.29648 8.08133 5.60547 8.2379 4.938C5.71611 6.28423 4 8.9417 4 12Z" fill="currentColor"></path></svg>
+</span>
+      <span class="sun-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M12 18C8.68629 18 6 15.3137 6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12C18 15.3137 15.3137 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16ZM11 1H13V4H11V1ZM11 20H13V23H11V20ZM3.51472 4.92893L4.92893 3.51472L7.05025 5.63604L5.63604 7.05025L3.51472 4.92893ZM16.9497 18.364L18.364 16.9497L20.4853 19.0711L19.0711 20.4853L16.9497 18.364ZM19.0711 3.51472L20.4853 4.92893L18.364 7.05025L16.9497 5.63604L19.0711 3.51472ZM5.63604 16.9497L7.05025 18.364L4.92893 20.4853L3.51472 19.0711L5.63604 16.9497ZM23 11V13H20V11H23ZM4 11V13H1V11H4Z" fill="currentColor"></path></svg>
+</span>
+    </button>
+    
+  </div>
+</footer>
+
+
+
+<dialog id="rss-mask">
+  <div>
+    <a href="https://oubihi.de/posts/feed.xml">https://oubihi.de/posts/feed.xml</a>
+    
+    
+    <button autofocus aria-label="copy" data-link="https://oubihi.de/posts/feed.xml" data-copy-icon="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;18&quot; height=&quot;18&quot;&gt;&lt;path d=&quot;M6.9998 6V3C6.9998 2.44772 7.44752 2 7.9998 2H19.9998C20.5521 2 20.9998 2.44772 20.9998 3V17C20.9998 17.5523 20.5521 18 19.9998 18H16.9998V20.9991C16.9998 21.5519 16.5499 22 15.993 22H4.00666C3.45059 22 3 21.5554 3 20.9991L3.0026 7.00087C3.0027 6.44811 3.45264 6 4.00942 6H6.9998ZM5.00242 8L5.00019 20H14.9998V8H5.00242ZM8.9998 6H16.9998V16H18.9998V4H8.9998V6Z&quot; fill=&quot;currentColor&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+" data-check-icon="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;18&quot; height=&quot;18&quot;&gt;&lt;path d=&quot;M10.0007 15.1709L19.1931 5.97852L20.6073 7.39273L10.0007 17.9993L3.63672 11.6354L5.05093 10.2212L10.0007 15.1709Z&quot; fill=&quot;currentColor&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+" >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M6.9998 6V3C6.9998 2.44772 7.44752 2 7.9998 2H19.9998C20.5521 2 20.9998 2.44772 20.9998 3V17C20.9998 17.5523 20.5521 18 19.9998 18H16.9998V20.9991C16.9998 21.5519 16.5499 22 15.993 22H4.00666C3.45059 22 3 21.5554 3 20.9991L3.0026 7.00087C3.0027 6.44811 3.45264 6 4.00942 6H6.9998ZM5.00242 8L5.00019 20H14.9998V8H5.00242ZM8.9998 6H16.9998V16H18.9998V4H8.9998V6Z" fill="currentColor"></path></svg>
+
+    </button>
+  </div>
+</dialog>
+
+
+  </main>
+</div>
+
+  
+<script src="/js/lightense.min.js"></script>
+
+
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.17.2/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true });
+</script>
+
+
+  <script src="https://oubihi.de/js/main.js"></script>
+</body>
+
+</html>
