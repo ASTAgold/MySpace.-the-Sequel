@@ -13,14 +13,7 @@
         <loc>https://oubihi.de/categories/guides/</loc>
     </url>
     <url>
-        <loc>https://oubihi.de/categories/self-hosting/</loc>
-    </url>
-    <url>
         <loc>https://oubihi.de/posts/</loc>
-    </url>
-    <url>
-        <loc>https://oubihi.de/posts/hello-homelab/</loc>
-        <lastmod>2026-09-29</lastmod>
     </url>
     <url>
         <loc>https://oubihi.de/posts/ultiamte-guide/</loc>
@@ -28,12 +21,6 @@
     </url>
     <url>
         <loc>https://oubihi.de/tags/</loc>
-    </url>
-    <url>
-        <loc>https://oubihi.de/tags/caddy/</loc>
-    </url>
-    <url>
-        <loc>https://oubihi.de/tags/homelab/</loc>
     </url>
     <url>
         <loc>https://oubihi.de/tags/markdown/</loc>

@@ -9,25 +9,6 @@
 	
 	<id>https://oubihi.de/posts/feed.xml</id>
 	<entry xml:lang="en">
-		<title>Moving my Homelab to Caddy</title>
-		<published>2026-09-29T00:00:00+00:00</published>
-		<updated>2026-09-29T00:00:00+00:00</updated>
-		<link rel="alternate" type="text/html" href="https://oubihi.de/posts/hello-homelab/"/>
-		<id>https://oubihi.de/posts/hello-homelab/</id>
-    
-		<content type="html" xml:base="https://oubihi.de/posts/hello-homelab/">&lt;p&gt;Here is how I wired up wildcard SSL certificates using Cloudflare DNS-01...&lt;/p&gt;
-&lt;blockquote class=&quot;markdown-alert-note&quot;&gt;
-&lt;p&gt;This is a clean themed info box.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote class=&quot;markdown-alert-tip&quot;&gt;
-&lt;p&gt;Great for highlighting quick terminal commands or shortcuts.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote class=&quot;markdown-alert-warning&quot;&gt;
-&lt;p&gt;Useful for pointing out config pitfalls (like CGNAT or port conflicts).&lt;/p&gt;
-&lt;/blockquote&gt;
-</content>
-	</entry>
-	<entry xml:lang="en">
 		<title>The Ultimate Zola &amp; Serene Writing Cheat Sheet</title>
 		<published>2026-09-29T00:00:00+00:00</published>
 		<updated>2026-09-29T00:00:00+00:00</updated>
